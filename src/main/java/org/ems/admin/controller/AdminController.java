@@ -40,7 +40,7 @@ public class AdminController {
 		this.deptService = deptService;
 	}
 
-	@GetMapping("/admin")
+	@GetMapping("/")
 	public String index() {
 		return "index";
 	}
