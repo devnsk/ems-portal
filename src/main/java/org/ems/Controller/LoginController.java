@@ -35,7 +35,7 @@ public class LoginController {
 		System.out.println(email + " " + password);
 
 		Employee authenticatedEmployee = employeeService.authenticateEmployee(email, password);
-		System.out.println(authenticatedEmployee.getEmployeeName());
+//		System.out.println(authenticatedEmployee.getEmployeeName());
 
 		if (authenticatedEmployee != null) {
 			// ...

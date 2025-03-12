@@ -35,7 +35,7 @@ public class AdminController {
 	private final RoleService roleService;
 	private final DepartmentService deptService;
 
-	public AdminController(EmployeeService employeeService, RoleService roleService, DepartmentService deptService) {
+	public AdminController(EmployeeService employeeService, RoleService roleService,DepartmentService deptService) {
 		this.employeeService = employeeService;
 		this.roleService = roleService;
 		this.deptService = deptService;

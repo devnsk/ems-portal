@@ -18,7 +18,7 @@ public class LeaveRequest {
     private String leaveDescription;
 
 
-    private String empId;
+    private Long empId;
 
     private String empName;
 
@@ -53,11 +53,11 @@ public class LeaveRequest {
         this.leaveDescription = leaveDescription;
     }
 
-    public String getEmpId() {
+    public Long getEmpId() {
         return empId;
     }
 
-    public void setEmpId(String empId) {
+    public void setEmpId(Long empId) {
         this.empId = empId;
     }
 
