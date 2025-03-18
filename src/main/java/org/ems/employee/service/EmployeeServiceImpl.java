@@ -36,7 +36,15 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public void addEmployee(Employee employee) {
 		// TODO Auto-generated method stub
 		System.out.println(employee.toString());
-		employeeRepository.save(employee);
+		Employee saved = employeeRepository.save(employee);
+
+		EmailDetails emailDetails = new EmailDetails();
+		emailDetails.setRecipient(employee.getEmail());
+		emailDetails.setSubject("Login Credentials");
+//		Checking the Email Details
+		System.out.println(emailDetails.toString());
+//		Email Sending Details
+		emailService.sendUserCredentials(emailDetails,saved);
 //		return "done";
 	}
 
@@ -91,7 +99,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public void AddLeaveRequest(LeaveRequest leave) {
-		leaveRepository.save(leave);
+		LeaveRequest saved = leaveRepository.save(leave);
 	}
 
 	@Override
