@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eduvance Sign In</title>
+<title>EvoStaff Sign In</title>
 <link rel="stylesheet" href="assets/css/styleslogin.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script
@@ -32,8 +32,8 @@
 				</div>
 
 				<div class="form-group remember-forgot">
-					<label class="remember-me"> <input type="checkbox"
-						id="remember" name="remember">RememberMe
+<%--					<label class="remember-me"> <input type="checkbox"--%>
+<%--						id="remember" name="remember">RememberMe--%>
 					</label> <a href="ForgetPass">Forgot Password?</a>
 				</div>
 

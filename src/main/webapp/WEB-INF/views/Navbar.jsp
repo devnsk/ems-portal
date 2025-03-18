@@ -6,6 +6,7 @@
 							id="sidebarToggleTop" type="button">
 							<i class="fas fa-bars"></i>
 						</button>
+						<%--							This is the Seach Box in Navbar --%>
 						<form
 							class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
 							<div class="input-group">
@@ -16,7 +17,9 @@
 								</button>
 							</div>
 						</form>
+
 						<ul class="navbar-nav flex-nowrap ms-auto">
+
 							<li class="nav-item dropdown d-sm-none no-arrow"><a
 								class="dropdown-toggle nav-link" aria-expanded="false"
 								data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
@@ -32,7 +35,10 @@
 											</button>
 										</div>
 									</form>
-								</div></li>
+								</div>
+							</li>
+
+<%--							This is the Notification Icon Code --%>
 							<li class="nav-item dropdown no-arrow mx-1"><div
 									class="nav-item dropdown no-arrow">
 									<a class="dropdown-toggle nav-link" aria-expanded="false"
@@ -74,6 +80,8 @@
 											href="#">Show All Alerts</a>
 									</div>
 								</div></li>
+
+<%--						This is the Mail Icon Code  --%>
 							<li class="nav-item dropdown no-arrow mx-1"><div
 									class="nav-item dropdown no-arrow">
 									<a class="dropdown-toggle nav-link" aria-expanded="false"
@@ -139,6 +147,9 @@
 								<div
 									class="shadow dropdown-list dropdown-menu dropdown-menu-end"
 									aria-labelledby="alertsDropdown"></div></li>
+
+<%--							From this is code is for profile icon & image  --%>
+
 							<div class="d-none d-sm-block topbar-divider"></div>
 							<li class="nav-item dropdown no-arrow">
 								<div class="nav-item dropdown no-arrow">

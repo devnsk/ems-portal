@@ -18,7 +18,7 @@
         <div id="content">
             <%@ include file="Navbar.jsp" %>
             <div class="container-fluid">
-                <h3 class="text-dark mb-4">Team</h3>
+<%--                <h3 class="text-dark mb-4">Team</h3>--%>
                 <div class="card shadow">
                     <div class="card-header py-3">
                         <p class="text-primary m-0 fw-bold">Department Info</p>
@@ -53,7 +53,6 @@
                                 <tr>
                                     <th>Name</th>
                                     <th>Description</th>
-
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -61,12 +60,9 @@
                                     <tr>
                                         <td>${dep.departmentName}</td>
                                         <td>${dep.description}</td>
-                                        <td><a
-                                                href="updateDept?deptid=${dep.departmentId}"
-                                                class="btn btn-outline-warning">Edit</a>
-
-                                            <a
-                                                    href="deleteDept?deptid=${dep.departmentId}"><button class="btn btn-danger" type="button">Delete</button></a>
+                                        <td>
+                                            <a href="updateDept?deptid=${dep.departmentId}"><button class="btn btn-outline-warning" type="button">Edit</button></a>
+                                            <a href="deleteDept?deptid=${dep.departmentId}"><button class="btn btn-danger" type="button">Delete</button></a>
                                         </td>
                                     </tr>
                                 </c:forEach>
@@ -77,7 +73,7 @@
                         <div class="row">
                             <div class="col-md-6 align-self-center">
                                 <p id="dataTable_info" class="dataTables_info" role="status"
-                                   aria-live="polite">Showing 1 to 10 of 27</p>
+                                   aria-live="polite">Showing 1 to 10 of 10</p>
                             </div>
                             <div class="col-md-6">
                                 <nav
@@ -102,7 +98,7 @@
         <footer class="bg-white sticky-footer">
             <div class="container my-auto">
                 <div class="text-center my-auto copyright">
-                    <span>Copyright © Brand 2025</span>
+                    <span>Copyright © EvoStaff 2025</span>
                 </div>
             </div>
         </footer>

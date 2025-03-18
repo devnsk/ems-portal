@@ -103,7 +103,7 @@ public class AdminController {
 //		}
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		LocalDate dob = LocalDate.parse(dobString, formatter);
-		System.out.println(name + " " + email + " " + phoneNo + " " + dob + " " + salary);
+//		System.out.println(name + " " + email + " " + phoneNo + " " + dob + " " + salary);
 //	   System.out.println(emp.toString());
 		Employee newEmp = new Employee();
 		newEmp.setEmployeeName(name);

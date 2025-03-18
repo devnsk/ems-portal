@@ -31,7 +31,7 @@ public class DeparmentController {
     public String departmentAdd( @RequestParam("departmentName") String departmentName,
                                  @RequestParam("description") String description) {
 
-        System.out.println(departmentName + " " + description);
+//        System.out.println(departmentName + " " + description);
 
         Department newDept = new Department();
         newDept.setDepartmentName(departmentName);

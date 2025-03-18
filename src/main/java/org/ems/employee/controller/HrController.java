@@ -26,12 +26,6 @@ public class HrController {
 
 	@GetMapping("/Hr-profile")
 	public String hrProfile(Model model){
-
-		// Testing Code for Profile
-		Employee employee=new Employee();
-		employee.setEmployeeName("Sandeep");
-		model.addAttribute("emp", employee);
-
 		return "HrProfile";
 	}
 

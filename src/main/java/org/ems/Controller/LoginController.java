@@ -37,10 +37,10 @@ public class LoginController {
 	public String processLogin(@RequestParam("email") String email, @RequestParam("password") String password,
 			HttpSession session) {
 		// ... (your authentication logic) ...
-		System.out.println(email + " " + password);
+//		System.out.println(email + " " + password);
 
 		Employee authenticatedEmployee = employeeService.authenticateEmployee(email, password);
-		System.out.println(authenticatedEmployee.getEmployeeName());
+//		System.out.println(authenticatedEmployee.getEmployeeName());
 
 		if (authenticatedEmployee != null) {
 			// ...

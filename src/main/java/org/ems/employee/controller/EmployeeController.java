@@ -45,7 +45,7 @@ public class EmployeeController {
             @RequestParam("contactNumber") String contactNumber,HttpSession session)
     {
         Employee loggedUser = (Employee)session.getAttribute("loggedInEmployee");
-    	System.out.println(empId + " " + leaveType + " " + description + " "+contactNumber);
+//    	System.out.println(empId + " " + leaveType + " " + description + " "+contactNumber);
 
         // Create LeaveRequest object
         LeaveRequest leaveRequest = new LeaveRequest();

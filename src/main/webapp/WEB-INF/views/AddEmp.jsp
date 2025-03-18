@@ -43,70 +43,75 @@
 				<%@ include file="Navbar.jsp" %>
 
 				<!-- Begin Page Content -->
+
 				<div class="container-fluid">
+
 					<div
 						class="d-sm-flex justify-content-between align-items-center mb-4">
 						<!--  <h3 class="text-dark mb-0">Add Employee</h3> -->
 					</div>
 
 					<!-- Add Employee Form -->
-					<div class="form-container">
-						<form:form action="addEmployee" modelAttribute="empForm"
-							method="POST" id="employeeForm">
-							<div class="mb-3">
-								<label for="employeeName" class="form-label">Employee
-									Name *</label> <input type="text" class="form-control"
-									id="employeeName" name="employeeName" required>
-							</div>
 
-							<div class="mb-3">
-								<label for="address" class="form-label">Address</label>
-								<textarea class="form-control" id="address" name="address"
-									rows="3"></textarea>
-							</div>
+						<div class="form-container">
 
-							<div class="mb-3">
-								<label for="phoneNo" class="form-label">Phone Number *</label> <input
-									type="tel" class="form-control" id="phoneNo" name="phoneNo"
-									pattern="[0-9]{10}"
-									title="Please enter a valid 10-digit phone number" required>
-							</div>
+							<form:form action="addEmployee" modelAttribute="empForm"
+								method="POST" id="employeeForm">
+								<div class="mb-3">
+									<label for="employeeName" class="form-label">Employee
+										Name *</label> <input type="text" class="form-control"
+										id="employeeName" name="employeeName" required>
+								</div>
 
-							<div class="mb-3">
-								<label for="email" class="form-label">Email Address *</label> <input
-									type="email" class="form-control" id="email" name="email"
-									required>
-							</div>
-							<div class="mb-3">
-							<label for="password" class="form-label">Password *</label>
-								<input type="password" class="form-control" id="password"
-									name="password" required minlength="8"
-									pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
-									title="Password must be at least 8 characters long and contain at least one letter, one number, and one special character (@$!%*#?&).">
-								<span class="password-toggle" id="togglePassword"> <i
-									class="fa fa-eye"></i>
-								</span>	
-							</div>
+								<div class="mb-3">
+									<label for="address" class="form-label">Address</label>
+									<textarea class="form-control" id="address" name="address"
+										rows="3"></textarea>
+								</div>
 
-							<div class="mb-3">
-								<label for="dob" class="form-label">Date of Birth *</label> <input
-									type="date" class="form-control" id="dob" name="dob" required>
-							</div>
+								<div class="mb-3">
+									<label for="phoneNo" class="form-label">Phone Number *</label> <input
+										type="tel" class="form-control" id="phoneNo" name="phoneNo"
+										pattern="[0-9]{10}"
+										title="Please enter a valid 10-digit phone number" required>
+								</div>
 
-							<div class="mb-3">
-								<label for="salary" class="form-label">Salary *</label> <input
-									type="number" class="form-control" id="salary" name="salary"
-									step="0.01" min="0" required>
-							</div>
+								<div class="mb-3">
+									<label for="email" class="form-label">Email Address *</label> <input
+										type="email" class="form-control" id="email" name="email"
+										required>
+								</div>
+								<div class="mb-3">
+								<label for="password" class="form-label">Password *</label>
+									<input type="password" class="form-control" id="password"
+										name="password" required minlength="8"
+										pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+										title="Password must be at least 8 characters long and contain at least one letter, one number, and one special character (@$!%*#?&).">
+									<span class="password-toggle" id="togglePassword"> <i
+										class="fa fa-eye"></i>
+									</span>
+								</div>
+
+								<div class="mb-3">
+									<label for="dob" class="form-label">Date of Birth *</label> <input
+										type="date" class="form-control" id="dob" name="dob" required>
+								</div>
+
+								<div class="mb-3">
+									<label for="salary" class="form-label">Salary *</label> <input
+										type="number" class="form-control" id="salary" name="salary"
+										step="0.01" min="0" required>
+								</div>
 
 
 
-							<div class="text-center">
-								<button type="submit" class="btn btn-primary">Submit</button>
-								<button type="reset" class="btn btn-secondary">Reset</button>
-							</div>
-						</form:form>
-					</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary">Submit</button>
+									<button type="reset" class="btn btn-secondary">Reset</button>
+								</div>
+							</form:form>
+						</div>
+
 				</div>
 			</div>
 

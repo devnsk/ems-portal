@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Table - Brand</title>
+    <title>Leave Request Information</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -18,7 +18,7 @@
         <div id="content">
             <%@include file="Navbar.jsp" %>
             <div class="container-fluid">
-                <h3 class="text-dark mb-4">Team</h3>
+                <h3 class="text-dark mb-4">  </h3>
                 <div class="card shadow">
                     <div class="card-header py-3">
                         <p class="text-primary m-0 fw-bold">Leave List Info</p>
