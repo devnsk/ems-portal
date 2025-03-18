@@ -27,7 +27,7 @@ public class LoginController {
 		this.employeeService = employeeService;
 	}
 
-	@GetMapping("/")
+	@GetMapping({"/", "/login"})
 	public String login() {
 		return "login";
 	}

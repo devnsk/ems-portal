@@ -30,9 +30,9 @@ public class EmployeeController {
     }
 
     @GetMapping("empprofile")
-    public String empProfile(Model model){
-
-        Employee employeeById = employeeService.getEmployeeById(1l);
+    public String empProfile(Model model,HttpSession session){
+        Employee employee = (Employee) session.getAttribute("loggedInEmployee");
+        Employee employeeById = employeeService.getEmployeeById(employee.getEmployeeId());
         model.addAttribute("emp", employeeById);
         return "employeeProfile";
     }
